@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".AboutUsActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/movie_time_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:letterSpacing="0.1"
+        android:text="MOVIE TIME OFFICE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/tv_MovieRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textAlignment="center"
+        android:text="Grand Indonesia West Mall Lt. 3A\nM.H. Thamrin Street No.1,\nCentral Jakarta, DKI Jakarta, Indonesia\n\nOperational hours: 8 a.m. - 5 p.m."
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"/>
+    
+    <fragment
+        android:id="@+id/fragment_CafeMaps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+</LinearLayout>

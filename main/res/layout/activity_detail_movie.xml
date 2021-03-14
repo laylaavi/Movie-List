@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/colorAccent"
+    tools:context=".DetailMovieActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_MovieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Movie Title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_MovieGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_MovieTitle"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Genre"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:id="@+id/iv_MoviePoster"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_MovieGenre"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:id="@+id/iv_MovieStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_MoviePoster"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ic_baseline_stars_24" />
+
+            <TextView
+                android:id="@+id/tv_MovieRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/iv_MoviePoster"
+                android:layout_toEndOf="@+id/iv_MovieStar"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="4.0"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_MovieRuntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_MoviePoster"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Runtime"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_MovieReleased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/iv_MovieStar"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Released"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_MovieDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/tv_MovieReleased"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Director"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_MovieWriter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/tv_MovieDirector"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Writer"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_MovieActor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/tv_MovieWriter"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Actor"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_MovieProduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/tv_MovieActor"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Production"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_MoviePlot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/tv_MovieProduction"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Description"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
